@@ -13,10 +13,10 @@ namespace DiziYorumProje.Entity
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BlogDiziEntities : DbContext
+    public partial class BlogDiziEntities1 : DbContext
     {
-        public BlogDiziEntities()
-            : base("name=BlogDiziEntities")
+        public BlogDiziEntities1()
+            : base("name=BlogDiziEntities1")
         {
         }
     
@@ -25,12 +25,12 @@ namespace DiziYorumProje.Entity
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<TBLADMIN> TBLADMIN { get; set; }
         public virtual DbSet<TBLBLOG> TBLBLOG { get; set; }
         public virtual DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
         public virtual DbSet<TBLKATEGORI> TBLKATEGORI { get; set; }
         public virtual DbSet<TBLTUR> TBLTUR { get; set; }
         public virtual DbSet<TBLYORUM> TBLYORUM { get; set; }
-        public virtual DbSet<TBLADMIN> TBLADMIN { get; set; }
     }
 }

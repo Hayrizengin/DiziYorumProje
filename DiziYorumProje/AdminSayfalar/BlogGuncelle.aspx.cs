@@ -9,7 +9,7 @@ namespace DiziYorumProje.AdminSayfalar
 {
     public partial class BlogGuncelle : System.Web.UI.Page
     {
-        BlogDiziEntities db= new BlogDiziEntities();
+        BlogDiziEntities1 db = new BlogDiziEntities1();
         protected void Page_Load(object sender, EventArgs e)
         {
             int y= int.Parse(Request.QueryString["BLOGID"]);

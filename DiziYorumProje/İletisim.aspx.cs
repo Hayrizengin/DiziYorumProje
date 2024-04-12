@@ -13,7 +13,7 @@ namespace DiziYorumProje
         {
 
         }
-        BlogDiziEntities db = new BlogDiziEntities();
+        BlogDiziEntities1 db = new BlogDiziEntities1();
         protected void Button1_Click(object sender, EventArgs e)
         {
             TBLILETISIM t= new TBLILETISIM();

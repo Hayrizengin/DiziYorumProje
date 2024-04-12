@@ -9,7 +9,7 @@ namespace DiziYorumProje
 {
     public partial class BlogDetay : System.Web.UI.Page
     {
-        BlogDiziEntities db= new BlogDiziEntities();
+        BlogDiziEntities1 db = new BlogDiziEntities1();
         protected void Page_Load(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(Request.QueryString["BLOGID"]);

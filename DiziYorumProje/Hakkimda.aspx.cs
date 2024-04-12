@@ -10,7 +10,7 @@ namespace DiziYorumProje
 {
     public partial class Hakkimda : System.Web.UI.Page
     {
-        BlogDiziEntities db= new BlogDiziEntities();
+        BlogDiziEntities1 db = new BlogDiziEntities1();
         protected void Page_Load(object sender, EventArgs e)
         {
             Repeater1.DataSource = db.TBLHAKKIMIZDA.ToList();
